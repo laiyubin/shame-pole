@@ -7,5 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Wed, 21 Feb 2024 11:24:29 +0800</lastBuildDate><atom:link href="https://shame-pole.pages.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo</title>
+      <link>https://shame-pole.pages.dev/posts/hugo/</link>
+      <pubDate>Wed, 21 Feb 2024 11:24:29 +0800</pubDate>
+      
+      <guid>https://shame-pole.pages.dev/posts/hugo/</guid>
+      <description>
+        
+          
+            Basic # 啟動本地服務，且支持查看Draft狀態的 hugo server -D # 創建一個新的文檔, 會在content下生成 posts/test.md hugo new posts/test.md # Content &amp;#34;D:\\Workspace\\Hugo\\shame-pool\\content\\posts\\Hugo.md&amp;#34; created # 編譯所有非Draft狀態的文檔, 生成到public下 hugo 
+          
+          
+        
+      </description>
+    </item>
+    
   </channel>
 </rss>
