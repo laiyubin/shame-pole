@@ -2,17 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://shame-pole.pages.dev/posts/hugo/</loc>
-    <lastmod>2024-02-21T11:24:29+08:00</lastmod>
+    <loc>https://shame-pole.pages.dev/tags/aca/</loc>
+    <lastmod>2024-02-26T16:06:10+08:00</lastmod>
   </url><url>
-    <loc>https://shame-pole.pages.dev/posts/</loc>
-    <lastmod>2024-02-21T11:24:29+08:00</lastmod>
+    <loc>https://shame-pole.pages.dev/tags/aliyun/</loc>
+    <lastmod>2024-02-26T16:06:10+08:00</lastmod>
   </url><url>
-    <loc>https://shame-pole.pages.dev/</loc>
-    <lastmod>2024-02-21T11:24:29+08:00</lastmod>
+    <loc>https://shame-pole.pages.dev/categories/aliyun/</loc>
+    <lastmod>2024-02-26T16:06:10+08:00</lastmod>
   </url><url>
     <loc>https://shame-pole.pages.dev/categories/</loc>
+    <lastmod>2024-02-26T16:06:10+08:00</lastmod>
+  </url><url>
+    <loc>https://shame-pole.pages.dev/posts/</loc>
+    <lastmod>2024-02-26T16:06:10+08:00</lastmod>
   </url><url>
     <loc>https://shame-pole.pages.dev/tags/</loc>
+    <lastmod>2024-02-26T16:06:10+08:00</lastmod>
+  </url><url>
+    <loc>https://shame-pole.pages.dev/posts/aliyun_aca_questions/</loc>
+    <lastmod>2024-02-26T16:06:10+08:00</lastmod>
+  </url><url>
+    <loc>https://shame-pole.pages.dev/</loc>
+    <lastmod>2024-02-26T16:06:10+08:00</lastmod>
+  </url><url>
+    <loc>https://shame-pole.pages.dev/posts/hugo/</loc>
+    <lastmod>2024-02-21T11:24:29+08:00</lastmod>
   </url>
 </urlset>

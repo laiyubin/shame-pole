@@ -1,12 +1,66 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Shame</title>
+    <title>Posts on 知恥而後勇</title>
     <link>https://shame-pole.pages.dev/posts/</link>
-    <description>Recent content in Posts on Shame</description>
+    <description>Recent content in Posts on 知恥而後勇</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 21 Feb 2024 11:24:29 +0800</lastBuildDate><atom:link href="https://shame-pole.pages.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Feb 2024 16:06:10 +0800</lastBuildDate><atom:link href="https://shame-pole.pages.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>阿里云ACA云计算工程师考试题目(2023)</title>
+      <link>https://shame-pole.pages.dev/posts/aliyun_aca_questions/</link>
+      <pubDate>Mon, 26 Feb 2024 16:06:10 +0800</pubDate>
+      
+      <guid>https://shame-pole.pages.dev/posts/aliyun_aca_questions/</guid>
+      <description>
+        
+          
+            某电商平台近几年业务增长很快，访问量持续保持每年提升300%，平台运营团队因此获得了公司的年度特别奖励。在高兴之余运营团队发现平台系统带宽的支出是以每年500%的比例增长的，如果能有效降低这块成本可以提升整体的运营质量。此时，该公司选择阿里云的____服务，效果会最明显。
+A. 内容分发网络CDN
+B. 支持多可用区的云数据库RDS
+C. 负载均衡SLB
+D. 对象存储OSS
+网络ACL是专有网络VPC中的网络访问控制功能。用户可以自定义设置网络ACL规则，并将网络ACL与交换机绑定，实现对交换机中ECS的流量的访问控制。下列关于网络ACL功能特性说法错误的是___。
+A. 仅过滤绑定的交换机中的ECS流量
+B. 规则是无状态的
+C. 不过滤同一交换机内的ECS间的流量
+D. 无任何规则时，会允许所有出入方向的访问
+您希望定期对您的阿里云的云服务器ECS实例的磁盘数据进行备份，但是人工进行数据备份非常费力费时，或者会因为一些原因无法按期进行操作，可以通过____方式来最高效解决数据定期备份的问题。
+A. 请运维人员定期进行快照制作
+B. 设定磁盘自动快照的策略，并将该策略在需要备份的磁盘上生效
+C. 设定磁盘自动镜像的策略，并将该策略在需要备份的磁盘上生效
+D. 请运维人员定期进行镜像制作
+单选9.SLB系统后端的ECS云服务器权重值一样,但是实际负载却不一样,是什么原因导致的
+A. 开启了获取真实IP功能
+B. SLB后端服务器端口配置错误
+C. 权重值没有生效
+D. 开启了会话保持功能
+单选13.某保险公司的线上平台每天在线订单量超过20万笔，一年来频繁受到大流量攻击（超过10G），使服务断断续续，严重影响了公司的品牌和业务量。如果该客户使用阿里云的___产品可以抵御这类攻击，保证业务的高可用性。
+A. DDoS基础防护
+B. 安全管家
+C. 态势感知
+D. DDoS高防IP
+单选14.以下关于阿里云块存储（云盘）的说法，错误的是
+A. 阿里云云盘分为普通云盘、高效云盘、SSD云盘、ESSD云盘四类
+B. 不同类型的云盘，单盘容量相同
+C. 不同类型的云盘，存储介质不同
+D. 不同类型的云盘，吞吐量不同
+单选15.阿里云的安骑士是云盾提供的用来保护服务器的产品，以下________不属于安骑士的功能。
+A. 木马文件检查
+B. 防WEB应用系统的密码破解
+C. 异地登录报警
+D. 防操作系统密码暴力破解
+单选16.某用户是做服装销售生意的,所有的在线平台和数据都放在阿里云的云服务器ECS实例和云数据库RDS实例中,现在CEO想对销售额的变化趋势做一个监控,并在订单量发生较大变化时能收到预警信息,可以使用阿里云的哪个产品实现,并在管理控制台中展现结果？
+A. 态势感知
+B. 云服务器ECS
+C. 云监控
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Hugo</title>
       <link>https://shame-pole.pages.dev/posts/hugo/</link>
@@ -16,7 +70,7 @@
       <description>
         
           
-            Basic # 啟動本地服務，且支持查看Draft狀態的 hugo server -D # 創建一個新的文檔, 會在content下生成 posts/test.md hugo new posts/test.md # Content &amp;#34;D:\\Workspace\\Hugo\\shame-pool\\content\\posts\\Hugo.md&amp;#34; created # 編譯所有非Draft狀態的文檔, 生成到public下 hugo 
+            **testtest test test ** Basic 常用命令 # 啟動本地服務，且支持查看Draft狀態的 hugo server -D # 創建一個新的文檔, 會在content下生成 posts/test.md hugo new posts/test.md # Content &amp;#34;D:\\Workspace\\Hugo\\shame-pool\\content\\posts\\Hugo.md&amp;#34; created # 編譯所有非Draft狀態的文檔, 生成到public下 hugo server -D # 創建一個新的文檔, 會在content下生成 posts/test.md hugo new posts/test.md # Content &amp;#34;D:\\Workspace\\Hugo\\shame-pool\\content\\posts\\Hugo.md&amp;#34; created # 編譯所有非Draft狀態的文檔, 生成到public下 hugo server -D # 創建一個新的文檔, 會在content下生成 posts/test.md hugo new posts/test.md # Content &amp;#34;D:\\Workspace\\Hugo\\shame-pool\\content\\posts\\Hugo.md&amp;#34; created # 編譯所有非Draft狀態的文檔, 生成到public下 hugo server -D # 創建一個新的文檔, 會在content下生成 posts/test.md hugo new posts/test.md # Content &amp;#34;D:\\Workspace\\Hugo\\shame-pool\\content\\posts\\Hugo.
           
           
         
