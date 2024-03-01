@@ -348,7 +348,7 @@ ARKS（Auto-Scaling Kubernetes Service）：自动化容器服务，根据应用
 <p>A.1个
 <br/>B.3个
 <br/>C.5个
-<br/>D.10个</p>
+<br/><u>D.10个</u></p>
 <blockquote>
 <p>主实例内存≥64GB：最多创建10个只读实例。<br/>
 主实例内存＜64GB：最多创建5个只读实例。<br/>
@@ -357,31 +357,43 @@ ARKS（Auto-Scaling Kubernetes Service）：自动化容器服务，根据应用
 <p><strong>.用户创建阿里云负载均衡SLB后，在添加后端服务器之前，需要创建的是？</strong></p>
 <p>A.负裁均衡服务
 <br/>B.服务地址
-<br/>C.监听
+<br/><u>C.监听</u>
 <br/>D.服务器组</p>
+<blockquote>
+<p>创建SLB实例 -&gt; 配置监听-&gt; 添加后端服务器 -&gt; 配置健康检查 -&gt; 提交配置
+<a href="https://help.aliyun.com/zh/slb/classic-load-balancer/user-guide/add-an-http-listener-1?spm=a2c4g.11186623.0.i20">参考文档</a></p>
+</blockquote>
 <p><strong>.阿里云负载均衡SLB支持主备可用区的部署方式，下列哪种情况发生后，负载均衡SLB实例会切换至备可用区中运行？</strong></p>
 <p>A.主可用区中某台ECS故障
 <br/>B.主可用区中所有ECS故障
-<br/>C.主可用区机房整体断电
+<br/><u>C.主可用区机房整体断电</u>
 <br/>D.备可用区中运行的ECS数量超过了主可用区</p>
+<blockquote>
+<p>负载均衡的主备可用区是可用区级别的容灾。只有当主可用区整体不可用时，如机房整体断电或者机房出口光缆中断等，负载均衡才会切换到备可用区。而并非某个实例出现故障，就切换到备可用区。</p>
+</blockquote>
 <p><strong>在专有网络VPC（VirtualPrivateCloud）中使用云资源前要做哪些工作？</strong></p>
 <p>A.先创建一个专有网络
 <br/>B.先创建一个交换机
 <br/>C.先创建一个专有网络和交换机
 <br/>D.先创建多个交换机来划分子网</p>
 <p><strong>关于传统型负载均衡CLB的后端服务器池中的ECS权重配置，以下说法正确的是哪一项？</strong></p>
-<p>A.权重比越高的ECS将被分配到更多的访问请求
+<p><u>A.权重比越高的ECS将被分配到更多的访问请求</u>
 <br/>B.权重比越低的ECS将被分配到更多的访问请求
 <br/>C.权重比的高低和访问请求的分配几率没有必然关系
 <br/>D.权重大小可以为任意，不影响ECS访问量</p>
-<p><strong>下面关于阿里云云数据库PolarDBMySQL数据库集群账号的说法中，错误的是？</strong></p>
+<p><strong>下面关于阿里云云数据库PolarDB MySQL数据库集群账号的说法中，错误的是？</strong></p>
 <p>A.高权限账号可以断开任意账号的连接
-<br/>B.高权限账号可以通过SQL语句创建
+<br/><u>B.高权限账号可以通过SQL语句创建</u>
 <br/>C.高权限账号可以管理数据库
 <br/>D.普通账号可以通过控制台语句创建</p>
+<blockquote>
+<p><b>高权限账号：</b>为实例创建第一个账号时，必须创建为高权限账号。每个实例只能创建一个高权限账号，且该账号不能删除。<br/>
+<b>普通账号：</b>一个实例可以有多个普通账号。您需要手动为普通账号授予数据库权限。<br/>
+<a href="https://help.aliyun.com/zh/rds/apsaradb-rds-for-sql-server/create-an-account-for-an-rds-sql-server-instancy?spm=a2c4g.11186623.0.i44">参考文档</a></p>
+</blockquote>
 <p><strong>在ECS服务器磁盘中哪种磁盘IOPS吞吐性能最佳？</strong></p>
 <p>A.SSD云盘
-<br/>B.ESSD云盘
+<br/><u>B.ESSD云盘</u>
 <br/>C.高效云盘
 <br/>D.OSS</p>
 <p><strong>下面关于创建云盘的说法中错误的是？</strong></p>
@@ -396,9 +408,12 @@ ARKS（Auto-Scaling Kubernetes Service）：自动化容器服务，根据应用
 <br/>D.本地SATA磁盘</p>
 <p><strong>阿里云云服务器ECS按量付费的结算周期是？</strong></p>
 <p>A.每分钟结算
-<br/>B.每小时整点结算
+<br/><u>B.每小时整点结算</u>
 <br/>C.每天凌晨结算
 <br/>D.每月初结算</p>
+<blockquote>
+<p><a href="https://help.aliyun.com/zh/oss/product-overview/pay-as-you-go?spm=a2c4g.11186623.0.i55">https://help.aliyun.com/zh/oss/product-overview/pay-as-you-go?spm=a2c4g.11186623.0.i55</a></p>
+</blockquote>
 <p><strong>零信任访问架构以身份驱动为核心，纯SaaS化零信任网关遵循的原则中，不包括以下哪项？</strong></p>
 <p>A.不信任原则
 <br/>B.内网应用零暴显原则
@@ -413,7 +428,7 @@ ARKS（Auto-Scaling Kubernetes Service）：自动化容器服务，根据应用
 <p>A.云服务器ECS
 <br/>B.云数据库RDS
 <br/>C.负载均衡SLB
-<br/>D.弹性公网EIP</p>
+<br/><u>D.弹性公网EIP</u></p>
 <p><strong>阿里云云监控中使用自定义查看监控数据的功能，需要用到的功能组件是？</strong></p>
 <p>A. Dashboard
 <br/>B.主机监控
@@ -423,7 +438,7 @@ ARKS（Auto-Scaling Kubernetes Service）：自动化容器服务，根据应用
 <p>A.伸缩组的名称
 <br/>B.负载均衡实例
 <br/>C.虚拟交换机
-<br/>D.地域</p>
+<br/><u>D.地域</u></p>
 <p><strong>阿里云弹性伸缩服务ESS需要配置负载均衡SLB来为用户提供服务，对SLB和ESS要求是？</strong></p>
 <p>A.必须相同可用区
 <br/>B.必须相同地域
