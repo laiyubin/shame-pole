@@ -6,7 +6,27 @@
     <description>Recent content on 知恥而後勇</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 09 Mar 2024 16:54:59 +0800</lastBuildDate><atom:link href="https://shame-pole.pages.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Mar 2024 17:37:32 +0800</lastBuildDate><atom:link href="https://shame-pole.pages.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DNS三种记录类型CNAME/A/NS的区别</title>
+      <link>https://shame-pole.pages.dev/posts/dns_record_types/</link>
+      <pubDate>Fri, 15 Mar 2024 17:37:32 +0800</pubDate>
+      
+      <guid>https://shame-pole.pages.dev/posts/dns_record_types/</guid>
+      <description>
+        
+          
+            在DNS（域名系统）中，CNAME、A和NS是三种不同的记录类型，它们各自扮演着不同的角色，并共同协作以解析域名到IP地址或其他主机名。以下是关于这三种记录类型的简要说明：
+CNAME记录（Canonical Name）：
+CNAME记录用于将一个域名（别名）解析到另一个域名。换句话说，它允许你将一个域名指向另一个域名，而不是直接指向一个IP地址。 当DNS查询一个具有CNAME记录的域名时，它会返回别名所指向的域名，然后进一步解析该别名域名。 CNAME记录常用于将子域名（如www.example.com）解析到另一个域名，或者用于重定向服务（如将某个域名重定向到CDN或负载均衡器）。 注意：一个域名不能同时拥有CNAME记录和其他类型的记录（如A记录），因为CNAME记录是独占的。 A记录（Address）：
+A记录用于将域名直接解析到IP地址。它建立了域名和IP地址之间的映射关系。 当DNS查询一个具有A记录的域名时，它会直接返回与该域名关联的IP地址。 A记录通常用于将主机名（如www.example.com）解析到服务器的IP地址。 一个域名可以有多个A记录，这允许将域名解析到多个IP地址，实现负载均衡或地理DNS等功能。 NS记录（Name Server）：
+NS记录用于指定负责解析某个域名的DNS服务器。它告诉DNS查询者应该向哪些服务器发送查询请求以获取该域名的解析信息。 每个域名都必须至少有一个NS记录，通常包含两个或更多的DNS服务器名称，以确保解析的可靠性和冗余性。 NS记录通常用于子域名的解析，并指定该子域名应该由哪些DNS服务器来解析。 在DNS解析过程中，NS记录的优先级高于A记录。如果一个主机地址同时存在NS记录和A记录，则A记录将不会被使用。 这三种记录类型在DNS解析中各自扮演着不同的角色，它们共同工作以确保域名能够正确地解析到相应的IP地址或其他主机名。正确配置这些记录对于网站的可用性、性能和安全性至关重要。
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>阿里云ACA云计算工程师考试题目(2023)-多选题</title>
       <link>https://shame-pole.pages.dev/posts/aliyun_aca_questions_multi_choices/</link>
