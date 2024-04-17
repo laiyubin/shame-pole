@@ -6,7 +6,30 @@
     <description>Recent content on 知恥而後勇</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 15 Mar 2024 17:37:32 +0800</lastBuildDate><atom:link href="https://shame-pole.pages.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Apr 2024 17:02:31 +0800</lastBuildDate><atom:link href="https://shame-pole.pages.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Oracle数据库索引类型</title>
+      <link>https://shame-pole.pages.dev/posts/oracle-db-index-type/</link>
+      <pubDate>Wed, 17 Apr 2024 17:02:31 +0800</pubDate>
+      
+      <guid>https://shame-pole.pages.dev/posts/oracle-db-index-type/</guid>
+      <description>
+        
+          
+            Oracle Oracle数据库支持多种索引类型，每种类型都有其特定的适用场景。以下是一些常见的Oracle索引类型及其适用情况：
+B-Tree索引：这是Oracle中最常用的索引类型。B-Tree（Balanced Tree）是一种自平衡的树形数据结构，可以高效地支持并发操作。B-Tree索引将数据值映射到行ID，可以用于等于、不等于、范围查询等操作。如果你的查询通常包含等于或范围查询条件，那么B-Tree索引可能是一个好的选择。Oracle会自动为表的主键列建立索引，这个默认的索引就是B-Tree索引。 CREATE INDEX index_name ON table_name (column_name); 其中，index_name 是索引的名称，table_name 是要创建索引的表名，column_name 是要在该表上创建索引的列名。
+位图索引：位图索引特定于该列只有几个枚举值的情况，比如性别字段或者只有0和1的标示字段。这种索引类型利用位图来标记表中每一行的特定值，非常适合于具有少量不同值的列。 位图索引的创建语法在Oracle数据库中如下： CREATE BITMAP INDEX index_name ON table_name(column_name); 其中：
+index_name 是你希望创建的位图索引的名称。 table_name 是你要在其上创建索引的表的名称。 column_name 是你希望创建索引的列的名称。 位图索引特别适用于那些只有少量不同值（或称为低基数）的列，例如性别、状态等。由于位图索引使用二进制形式存储索引值，所以查询速度快、存储空间小，但不支持范围查询。
+函数索引：函数索引允许你在函数或表达式上创建索引。这对于处理复杂查询非常有用，特别是当查询条件包含函数运算时。通过使用函数索引，Oracle可以直接访问预计算的函数结果，从而提高查询性能。 CREATE INDEX index_name ON table_name (function_name(column_name)); 这里，function_name 是要应用的函数名，column_name 是要应用函数的列名。
+分区索引：分区索引是针对分区表的索引类型。当表被分区时，你可以为每个分区创建局部索引，或者创建一个跨越所有分区的全局索引。分区索引可以提高查询性能，特别是当查询只涉及表的一个或少数几个分区时。 分区索引的创建语法涉及到对表的分区操作，基本的创建语句类似于B-Tree索引，但需要在创建时指定分区策略。
+哈希索引：哈希索引基于哈希算法，可能是访问数据库中数据的最快方法。然而，它也有自身的缺点，比如需要预先知道集群键上不同值的数目，并在创建HASH集群时指定这个值。 CREATE INDEX index_name ON table_name (column_name) TABLESPACE tablespace_name HASHKEYS hash_key_number; 其中，tablespace_name 指定索引所在的表空间，hash_key_number 指定散列桶的数量。
+反向键索引：反向键索引将索引列的值反转后创建新的索引列。这种索引类型主要用于减少因插入操作导致的索引块争用，从而提高并发性能。 CREATE INDEX index_name ON table_name(column_name DESC); DESC 表示按照反向顺序进行排序。
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>DNS三种记录类型CNAME/A/NS的区别</title>
       <link>https://shame-pole.pages.dev/posts/dns_record_types/</link>
