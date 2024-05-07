@@ -6,7 +6,27 @@
     <description>Recent content in Posts on 知恥而後勇</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 17 Apr 2024 17:02:31 +0800</lastBuildDate><atom:link href="https://shame-pole.pages.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 May 2024 20:07:01 +0800</lastBuildDate><atom:link href="https://shame-pole.pages.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>db2中的exception join相当于oracle中的什么语法</title>
+      <link>https://shame-pole.pages.dev/posts/db2-exception-join/</link>
+      <pubDate>Tue, 07 May 2024 20:07:01 +0800</pubDate>
+      
+      <guid>https://shame-pole.pages.dev/posts/db2-exception-join/</guid>
+      <description>
+        
+          
+            DB2中的 EXCEPTION JOIN 是一个特有语法，用于识别在第一个表中有但第二个表中没有的行，类似于执行了一个左外连接后筛选出右表中为NULL的行。然而，直接在Oracle中并没有完全等同的 EXCEPTION JOIN 语法。
+要在Oracle中实现类似DB2 EXCEPTION JOIN 的功能，通常会使用 LEFT OUTER JOIN 结合 WHERE 子句来过滤出那些在右表中没有匹配的行。下面是转换示例：
+假设在DB2中你有如下 EXCEPTION JOIN 查询：
+SELECT a.* FROM TableA a EXCEPTION JOIN TableB b ON a.key = b.key; 在Oracle中，你可以这样写来达到相同的效果：
+SELECT a.* FROM TableA a LEFT OUTER JOIN TableB b ON a.key = b.key WHERE b.key IS NULL; 这段Oracle的SQL代码执行了一个左外连接，然后通过 WHERE 子句过滤出那些在 TableB 中没有匹配项的 TableA 行，这与DB2的 EXCEPTION JOIN 目的相同。
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Oracle数据库索引类型</title>
       <link>https://shame-pole.pages.dev/posts/oracle-db-index-type/</link>
