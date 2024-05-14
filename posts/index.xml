@@ -6,7 +6,24 @@
     <description>Recent content in Posts on 知恥而後勇</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 07 May 2024 20:07:01 +0800</lastBuildDate><atom:link href="https://shame-pole.pages.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 May 2024 15:50:33 +0800</lastBuildDate><atom:link href="https://shame-pole.pages.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Oracle修改字符串最大長度</title>
+      <link>https://shame-pole.pages.dev/posts/oracle-alter-max-string-size/</link>
+      <pubDate>Tue, 14 May 2024 15:50:33 +0800</pubDate>
+      
+      <guid>https://shame-pole.pages.dev/posts/oracle-alter-max-string-size/</guid>
+      <description>
+        
+          
+            Insert Lead paragraph here.
+C:\Users\fred.lai&amp;gt;sqlplus / as sysdba SQL*Plus: Release 21.0.0.0.0 - Production on 星期二 5月 14 15:44:09 2024 Version 21.3.0.0.0 Copyright (c) 1982, 2021, Oracle. All rights reserved. 连接到: Oracle Database 21c Express Edition Release 21.0.0.0.0 - Production Version 21.3.0.0.0 SQL&amp;gt; show parameter COMPATIBLE; NAME TYPE ------------------------------------ ---------------------- VALUE ------------------------------ compatible string 21.0.0 noncdb_compatible boolean FALSE SQL&amp;gt; show pdbs CON_ID CON_NAME OPEN MODE RESTRICTED ---------- ------------------------------ ---------- ---------- 2 PDB$SEED MOUNTED 3 XEPDB1 MOUNTED SQL&amp;gt; show user USER 为 &amp;#34;SYS&amp;#34; SQL&amp;gt; alter session set container=XEPDB1 2 ; 会话已更改。 SQL&amp;gt; shutdown immediate; ORA-65020: 插接式数据库 XEPDB1 已关闭 SQL&amp;gt; startup upgrade; 插接式数据库已打开。 SQL&amp;gt; alter system set max_string_size=extended scope=both; 系统已更改。 SQL&amp;gt; @?
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>db2中的exception join相当于oracle中的什么语法</title>
       <link>https://shame-pole.pages.dev/posts/db2-exception-join/</link>
