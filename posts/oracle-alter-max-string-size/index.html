@@ -106,7 +106,7 @@
 </span>
     <span class="post_date">
       May 14, 2024</span>
-    <span class="post_time"> · 4 min read</span><span>&nbsp;· <a href='https://shame-pole.pages.dev/tags/oracle/' title="Oracle" class="post_tag button button_translucent">Oracle
+    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://shame-pole.pages.dev/tags/oracle/' title="Oracle" class="post_tag button button_translucent">Oracle
         </a>
     </span>
     <span class="page_only">&nbsp;·
@@ -144,7 +144,7 @@
   </span>
   </div>
 
-    <div class="post_body"><p>參考  <a href="https://blog.csdn.net/yabingshi_tech/article/details/132491379">https://blog.csdn.net/yabingshi_tech/article/details/132491379</a> 后做以下執行。</p>
+    <div class="post_body"><p>參考  <a href="https://docs.oracle.com/en/database/oracle/oracle-database/21/refrn/MAX_STRING_SIZE.html">https://docs.oracle.com/en/database/oracle/oracle-database/21/refrn/MAX_STRING_SIZE.html</a> 后做以下執行。</p>
 <p>Oracle Version:  21.3.0</p>
 <pre tabindex="0"><code> 
 
@@ -160,16 +160,7 @@ Copyright (c) 1982, 2021, Oracle.  All rights reserved.
 Oracle Database 21c Express Edition Release 21.0.0.0.0 - Production
 Version 21.3.0.0.0
 
-SQL&gt; show parameter COMPATIBLE;
 
-NAME                                 TYPE
------------------------------------- ----------------------
-VALUE
-------------------------------
-compatible                           string
-21.0.0
-noncdb_compatible                    boolean
-FALSE
 SQL&gt; show pdbs
 
     CON_ID CON_NAME                       OPEN MODE  RESTRICTED
@@ -178,8 +169,7 @@ SQL&gt; show pdbs
          3 XEPDB1                         MOUNTED
 SQL&gt; show user
 USER 为 &#34;SYS&#34;
-SQL&gt; alter session set container=XEPDB1
-  2  ;
+SQL&gt; alter session set container=XEPDB1 ;
 
 会话已更改。
 
@@ -187,7 +177,7 @@ SQL&gt; shutdown immediate;
 ORA-65020: 插接式数据库 XEPDB1 已关闭
 
 
-SQL&gt; startup upgrade;
+SQL&gt; ALTER PLUGGABLE DATABASE XEPDB1 OPEN UPGRADE;
 插接式数据库已打开。
 SQL&gt; alter system set max_string_size=extended scope=both;
 
@@ -195,133 +185,7 @@ SQL&gt; alter system set max_string_size=extended scope=both;
 
 SQL&gt;  @?/rdbms/admin/utl32k.sql
 
-会话已更改。
-
-
-会话已更改。
-
-DOC&gt;#######################################################################
-DOC&gt;#######################################################################
-DOC&gt;   The following statement will cause an &#34;ORA-01722: invalid number&#34;
-DOC&gt;   error if the database has not been opened for UPGRADE.
-DOC&gt;
-DOC&gt;   Perform a &#34;SHUTDOWN ABORT&#34;  and
-DOC&gt;   restart using UPGRADE.
-DOC&gt;#######################################################################
-DOC&gt;#######################################################################
-DOC&gt;#
-
-未选定行
-
-DOC&gt;#######################################################################
-DOC&gt;#######################################################################
-DOC&gt;   The following statement will cause an &#34;ORA-01722: invalid number&#34;
-DOC&gt;   error if the database does not have compatible &gt;= 12.0.0
-DOC&gt;
-DOC&gt;   Set compatible &gt;= 12.0.0 and retry.
-DOC&gt;#######################################################################
-DOC&gt;#######################################################################
-DOC&gt;#
-
-PL/SQL 过程已成功完成。
-
-
-会话已更改。
-
-
-已更新 0 行。
-
-
-提交完成。
-
-
-系统已更改。
-
-
-PL/SQL 过程已成功完成。
-
-
-提交完成。
-
-
-系统已更改。
-
-
-会话已更改。
-
-
-会话已更改。
-
-
-表已创建。
-
-
-表已创建。
-
-
-表已创建。
-
-
-表被截断。
-
-
-已创建 0 行。
-
-
-PL/SQL 过程已成功完成。
-
-
-STARTTIME
---------------------------------------------------------------------------------
-05/14/2024 15:47:11.831000000
-
-
-PL/SQL 过程已成功完成。
-
-没有错误。
-
-PL/SQL 过程已成功完成。
-
-
-会话已更改。
-
-
-会话已更改。
-
-
-已创建 0 行。
-
-
-未选定行
-
-
-未选定行
-
-DOC&gt;#######################################################################
-DOC&gt;#######################################################################
-DOC&gt;   The following statement will cause an &#34;ORA-01722: invalid number&#34;
-DOC&gt;   error if we encountered an error while modifying a column to
-DOC&gt;   account for data type length change as a result of enabling or
-DOC&gt;   disabling 32k types.
-DOC&gt;
-DOC&gt;   Contact Oracle support for assistance.
-DOC&gt;#######################################################################
-DOC&gt;#######################################################################
-DOC&gt;#
-
-PL/SQL 过程已成功完成。
-
-
-PL/SQL 过程已成功完成。
-
-
-提交完成。
-
-
-程序包已变更。
-
-
-会话已更改。
+ 
 
 SQL&gt; select count(*) from dba_objects where status&lt;&gt;&#39;VALID&#39;;
 
@@ -333,93 +197,13 @@ SQL&gt; shutdown immediate;
 插接式数据库已关闭。
 SQL&gt; startup;
 插接式数据库已打开。
+
+SQL&gt; alter session set container=XEPDB1 ;
+
+
 SQL&gt;  @?/rdbms/admin/utlrp.sql
 
-会话已更改。
 
-
-TIMESTAMP
---------------------------------------------------------------------------------
-COMP_TIMESTAMP UTLRP_BGN              2024-05-14 15:48:09
-
-DOC&gt;   The following PL/SQL block invokes UTL_RECOMP to recompile invalid
-DOC&gt;   objects in the database. Recompilation time is proportional to the
-DOC&gt;   number of invalid objects in the database, so this command may take
-DOC&gt;   a long time to execute on a database with a large number of invalid
-DOC&gt;   objects.
-DOC&gt;
-DOC&gt;   Use the following queries to track recompilation progress:
-DOC&gt;
-DOC&gt;   1. Query returning the number of invalid objects remaining. This
-DOC&gt;      number should decrease with time.
-DOC&gt;         SELECT COUNT(*) FROM obj$ WHERE status IN (4, 5, 6);
-DOC&gt;
-DOC&gt;   2. Query returning the number of objects compiled so far. This number
-DOC&gt;      should increase with time.
-DOC&gt;         SELECT COUNT(*) FROM UTL_RECOMP_COMPILED;
-DOC&gt;
-DOC&gt;   This script automatically chooses serial or parallel recompilation
-DOC&gt;   based on the number of CPUs available (parameter cpu_count) multiplied
-DOC&gt;   by the number of threads per CPU (parameter parallel_threads_per_cpu).
-DOC&gt;   On RAC, this number is added across all RAC nodes.
-DOC&gt;
-DOC&gt;   UTL_RECOMP uses DBMS_SCHEDULER to create jobs for parallel
-DOC&gt;   recompilation. Jobs are created without instance affinity so that they
-DOC&gt;   can migrate across RAC nodes. Use the following queries to verify
-DOC&gt;   whether UTL_RECOMP jobs are being created and run correctly:
-DOC&gt;
-DOC&gt;   1. Query showing jobs created by UTL_RECOMP
-DOC&gt;         SELECT job_name FROM dba_scheduler_jobs
-DOC&gt;            WHERE job_name like &#39;UTL_RECOMP_SLAVE_%&#39;;
-DOC&gt;
-DOC&gt;   2. Query showing UTL_RECOMP jobs that are running
-DOC&gt;         SELECT job_name FROM dba_scheduler_running_jobs
-DOC&gt;            WHERE job_name like &#39;UTL_RECOMP_SLAVE_%&#39;;
-DOC&gt;#
-
-PL/SQL 过程已成功完成。
-
-
-TIMESTAMP
---------------------------------------------------------------------------------
-COMP_TIMESTAMP UTLRP_END              2024-05-14 15:48:11
-
-DOC&gt; The following query reports the number of invalid objects.
-DOC&gt;
-DOC&gt; If the number is higher than expected, please examine the error
-DOC&gt; messages reported with each object (using SHOW ERRORS) to see if they
-DOC&gt; point to system misconfiguration or resource constraints that must be
-DOC&gt; fixed before attempting to recompile these objects.
-DOC&gt;#
-
-OBJECTS WITH ERRORS
--------------------
-                  0
-
-DOC&gt; The following query reports the number of exceptions caught during
-DOC&gt; recompilation. If this number is non-zero, please query the error
-DOC&gt; messages in the table UTL_RECOMP_ERRORS to see if any of these errors
-DOC&gt; are due to misconfiguration or resource constraints that must be
-DOC&gt; fixed before objects can compile successfully.
-DOC&gt; Note: Typical compilation errors (due to coding errors) are not
-DOC&gt;       logged into this table: they go into DBA_ERRORS instead.
-DOC&gt;#
-
-ERRORS DURING RECOMPILATION
----------------------------
-                          0
-
-
-函数已创建。
-
-
-PL/SQL 过程已成功完成。
-
-
-函数已删除。
-
-
-PL/SQL 过程已成功完成。
 
 SQL&gt; select count(*) from dba_objects where status&lt;&gt;&#39;VALID&#39;;
 
