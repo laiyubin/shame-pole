@@ -2,14 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://shame-pole.pages.dev/categories/</loc>
+    <lastmod>2024-05-22T12:07:51+08:00</lastmod>
+  </url><url>
+    <loc>https://shame-pole.pages.dev/posts/postgre-init-and-start/</loc>
+    <lastmod>2024-05-22T12:07:51+08:00</lastmod>
+  </url><url>
     <loc>https://shame-pole.pages.dev/posts/</loc>
+    <lastmod>2024-05-22T12:07:51+08:00</lastmod>
+  </url><url>
+    <loc>https://shame-pole.pages.dev/tags/tag_name1/</loc>
+    <lastmod>2024-05-22T12:07:51+08:00</lastmod>
+  </url><url>
+    <loc>https://shame-pole.pages.dev/tags/tag_name2/</loc>
+    <lastmod>2024-05-22T12:07:51+08:00</lastmod>
+  </url><url>
+    <loc>https://shame-pole.pages.dev/tags/</loc>
+    <lastmod>2024-05-22T12:07:51+08:00</lastmod>
+  </url><url>
+    <loc>https://shame-pole.pages.dev/categories/technology/</loc>
     <lastmod>2024-05-22T12:07:51+08:00</lastmod>
   </url><url>
     <loc>https://shame-pole.pages.dev/</loc>
     <lastmod>2024-05-22T12:07:51+08:00</lastmod>
-  </url><url>
-    <loc>https://shame-pole.pages.dev/categories/</loc>
-    <lastmod>2024-05-14T15:50:33+08:00</lastmod>
   </url><url>
     <loc>https://shame-pole.pages.dev/tags/oracle/</loc>
     <lastmod>2024-05-14T15:50:33+08:00</lastmod>
@@ -18,9 +33,6 @@
     <lastmod>2024-05-14T15:50:33+08:00</lastmod>
   </url><url>
     <loc>https://shame-pole.pages.dev/posts/oracle-alter-max-string-size/</loc>
-    <lastmod>2024-05-14T15:50:33+08:00</lastmod>
-  </url><url>
-    <loc>https://shame-pole.pages.dev/tags/</loc>
     <lastmod>2024-05-14T15:50:33+08:00</lastmod>
   </url><url>
     <loc>https://shame-pole.pages.dev/posts/db2-exception-join/</loc>
