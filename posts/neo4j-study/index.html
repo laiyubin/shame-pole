@@ -2,12 +2,14 @@
 <!DOCTYPE html>
 <html
   lang="zh-cn"
-  data-figures=""
+  data-figures="true"
+  
+    class="page"
   
   
   >
   <head>
-<title>分类 | 知恥而後勇</title>
+<title>Neo4j Study | 知恥而後勇</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,25 +18,25 @@
 
 
 
+
 <meta property="og:locale" content="zh-cn" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="" />
+<meta name="description" content="Neo4j Study." />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
-<meta name="twitter:title" content="Categories" />
+<meta name="twitter:title" content="Neo4j Study" />
 <meta name="twitter:image" content="https://shame-pole.pages.dev/"/>
-<meta property="og:url" content="https://shame-pole.pages.dev/categories/" />
-<meta property="og:title" content="Categories" />
-<meta property="og:description" content="" />
+<meta property="og:url" content="https://shame-pole.pages.dev/posts/neo4j-study/" />
+<meta property="og:title" content="Neo4j Study" />
+<meta property="og:description" content="Neo4j Study." />
 <meta property="og:image" content="https://shame-pole.pages.dev/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://shame-pole.pages.dev/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://shame-pole.pages.dev/icons/favicon-32x32.png">
 <link rel="manifest" href="https://shame-pole.pages.dev/icons/site.webmanifest">
 
-<link rel="canonical" href="https://shame-pole.pages.dev/categories/">
-<link rel="alternate" type="application/rss+xml" href="https://shame-pole.pages.dev/categories/index.xml" title="知恥而後勇" />
+<link rel="canonical" href="https://shame-pole.pages.dev/posts/neo4j-study/">
 
 
 
@@ -50,8 +52,8 @@
 
   </head>
   <body
-    data-code="100"
-    data-lines="false"
+    data-code="35"
+    data-lines="true"
     id="documentTop"
     data-lang="zh-cn"
   >
@@ -93,19 +95,10 @@
 </header>
 
     <main>
-
-
-
+  
 <div class="grid-inverse wrap content">
-  <div>
-    <ul class="posts" id="posts">
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://shame-pole.pages.dev/categories/technology/" title="Technology">Technology</a>
-      </h3>
-      
+  <article class="post_content">
+    <h1 class="post_title">Neo4j Study</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -114,18 +107,20 @@
 </span>
     <span class="post_date">
       Jun 4, 2024</span>
-    <span class="post_time"> · 0 min read</span>
+    <span class="post_time"> · 3 min read</span><span>&nbsp;· <a href='https://shame-pole.pages.dev/tags/neo4j/' title="Neo4j" class="post_tag button button_translucent">Neo4j
+        </a>
+    </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     分享到:
-    <a href="https://twitter.com/intent/tweet?text=Technology&url=https%3a%2f%2fshame-pole.pages.dev%2fcategories%2ftechnology%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=Neo4j%20Study&url=https%3a%2f%2fshame-pole.pages.dev%2fposts%2fneo4j-study%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fshame-pole.pages.dev%2fcategories%2ftechnology%2f&t=Technology" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fshame-pole.pages.dev%2fposts%2fneo4j-study%2f&t=Neo4j%20Study" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -139,7 +134,7 @@
 </svg>
 
     </a>
-    <a href="https://shame-pole.pages.dev/categories/technology/" title="Copy Link" class="link link_yank">
+    <a href="https://shame-pole.pages.dev/posts/neo4j-study/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -150,279 +145,216 @@
   </span>
   </div>
 
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p></p>
-          
-          <br>
-          <a href="https://shame-pole.pages.dev/categories/technology/" title="阅读更多" class="excerpt_more button">阅读更多</a>
-        </div>
-      </div>
-    </div>
-  </li>
+    <div class="post_body"><h1 id="installation">Installation</h1>
+<h2 id="neo4j-service-is-not-installed">Neo4j service is not installed</h2>
+<pre tabindex="0"><code>D:\Tools\neo4j-community-5.5.0\bin&gt;neo4j.bat start
+Directories in use:
+home:         D:\Tools\neo4j-community-5.5.0
+config:       D:\Tools\neo4j-community-5.5.0\conf
+logs:         D:\Tools\neo4j-community-5.5.0\logs
+plugins:      D:\Tools\neo4j-community-5.5.0\plugins
+import:       D:\Tools\neo4j-community-5.5.0\import
+data:         D:\Tools\neo4j-community-5.5.0\data
+certificates: D:\Tools\neo4j-community-5.5.0\certificates
+licenses:     D:\Tools\neo4j-community-5.5.0\licenses
+run:          D:\Tools\neo4j-community-5.5.0\run
+Starting Neo4j.
+Neo4j service is not installed
+Unable to start. See user log for details.
+Run with &#39;--verbose&#39; for a more detailed error message.
+</code></pre><h3 id="install-neo4j-service">Install neo4j service</h3>
+<pre tabindex="0"><code>neo4j.bat windows-service install
+</code></pre><h2 id="start-neo4j">Start neo4j</h2>
+<pre tabindex="0"><code>D:\Tools\neo4j-community-5.5.0\bin&gt;neo4j.bat start
+Directories in use:
+home:         D:\Tools\neo4j-community-5.5.0
+config:       D:\Tools\neo4j-community-5.5.0\conf
+logs:         D:\Tools\neo4j-community-5.5.0\logs
+plugins:      D:\Tools\neo4j-community-5.5.0\plugins
+import:       D:\Tools\neo4j-community-5.5.0\import
+data:         D:\Tools\neo4j-community-5.5.0\data
+certificates: D:\Tools\neo4j-community-5.5.0\certificates
+licenses:     D:\Tools\neo4j-community-5.5.0\licenses
+run:          D:\Tools\neo4j-community-5.5.0\run
+Starting Neo4j.
+Started neo4j. It is available at http://localhost:7474
+There may be a short delay until the server is ready.
+</code></pre><p>打開http://localhost:7474</p>
+<p>第一次進入時，使用默認用戶名和密碼  neo4j/neo4j  登錄并修改密碼</p>
+<p>neo4j/password</p>
+<h1 id="usage">Usage</h1>
+<pre tabindex="0"><code># create a node
+CREATE(a:Database {name: &#39;as400&#39;})
+Create(b:Database {name:&#39;oracle&#39;})
 
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://shame-pole.pages.dev/categories/oracle/" title="Oracle">Oracle</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      May 14, 2024</span>
-    <span class="post_time"> · 0 min read</span>
-    <span class="page_only">&nbsp;·
-  <div class="post_share">
-    分享到:
-    <a href="https://twitter.com/intent/tweet?text=Oracle&url=https%3a%2f%2fshame-pole.pages.dev%2fcategories%2foracle%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>twitter</title>
-  <use xlink:href="#twitter"></use>
-</svg>
+# create relation
+MATCH (a:Database {name: &#39;as400&#39;}), (b:Database {name: &#39;oracle&#39;})  
+CREATE (a)-[:Migrate]-&gt;(b)
 
-    </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fshame-pole.pages.dev%2fcategories%2foracle%2f&t=Oracle" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>facebook</title>
-  <use xlink:href="#facebook"></use>
-</svg>
+# query nodes
+match (a:Database) return a;
+</code></pre><h3 id="table-nodes">Table Nodes</h3>
+<pre tabindex="0"><code>CREATE(a:Table {name:&#34;CAR_FRA_INFO&#34;, description:&#34;CAR_FRA_INFO&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;CAR_MAIN&#34;, description:&#34;CAR_MAIN&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;HOLI&#34;, description:&#34;HOLI&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;LSPC_REPORT_INFO&#34;, description:&#34;LSPC_REPORT_INFO&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PH23295&#34;, description:&#34;PH23295&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFACD&#34;, description:&#34;PRFACD&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFACL&#34;, description:&#34;PRFACL&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFACO&#34;, description:&#34;PRFACO&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFACP&#34;, description:&#34;PRFACP&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFADE&#34;, description:&#34;PRFADE&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFADEP&#34;, description:&#34;PRFADEP&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFADL&#34;, description:&#34;PRFADL&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFAFL&#34;, description:&#34;PRFAFL&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFAFR&#34;, description:&#34;PRFAFR&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFAFRP&#34;, description:&#34;PRFAFRP&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFAHL&#34;, description:&#34;PRFAHL&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFAIC&#34;, description:&#34;PRFAIC&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFAID&#34;, description:&#34;PRFAID&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFAIH&#34;, description:&#34;PRFAIH&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFAIL&#34;, description:&#34;PRFAIL&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFAPD&#34;, description:&#34;PRFAPD&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFAPH&#34;, description:&#34;PRFAPH&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFAPL&#34;, description:&#34;PRFAPL&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFAPO&#34;, description:&#34;PRFAPO&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFAPP&#34;, description:&#34;PRFAPP&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFAPR&#34;, description:&#34;PRFAPR&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFAPS&#34;, description:&#34;PRFAPS&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFARE&#34;, description:&#34;PRFARE&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFAREL&#34;, description:&#34;PRFAREL&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFAVN&#34;, description:&#34;PRFAVN&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFCBR&#34;, description:&#34;PRFCBR&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFCED&#34;, description:&#34;PRFCED&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFCEL&#34;, description:&#34;PRFCEL&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFCEO&#34;, description:&#34;PRFCEO&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFCER&#34;, description:&#34;PRFCER&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFCER_COLLECT&#34;, description:&#34;PRFCER_COLLECT&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFCER_PAYMENT&#34;, description:&#34;PRFCER_PAYMENT&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFCET_MAIN&#34;, description:&#34;PRFCET_MAIN&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFCFRA&#34;, description:&#34;PRFCFRA&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFCIN&#34;, description:&#34;PRFCIN&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFCMF&#34;, description:&#34;PRFCMF&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFCML&#34;, description:&#34;PRFCML&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFCMLH&#34;, description:&#34;PRFCMLH&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFCMS&#34;, description:&#34;PRFCMS&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFCNL&#34;, description:&#34;PRFCNL&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFCOM&#34;, description:&#34;PRFCOM&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFCOMH&#34;, description:&#34;PRFCOMH&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFCOMT&#34;, description:&#34;PRFCOMT&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFCON&#34;, description:&#34;PRFCON&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFCTPEX&#34;, description:&#34;PRFCTPEX&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFDE1&#34;, description:&#34;PRFDE1&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFDE1H&#34;, description:&#34;PRFDE1H&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFDE1HP&#34;, description:&#34;PRFDE1HP&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFDE1P&#34;, description:&#34;PRFDE1P&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFDE2&#34;, description:&#34;PRFDE2&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFDE2H&#34;, description:&#34;PRFDE2H&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFDE3&#34;, description:&#34;PRFDE3&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFDE3H&#34;, description:&#34;PRFDE3H&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFDE4&#34;, description:&#34;PRFDE4&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFDE4H&#34;, description:&#34;PRFDE4H&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFDES1&#34;, description:&#34;PRFDES1&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFDOC&#34;, description:&#34;PRFDOC&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFDUL&#34;, description:&#34;PRFDUL&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFDUV&#34;, description:&#34;PRFDUV&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFECTL&#34;, description:&#34;PRFECTL&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFEINF&#34;, description:&#34;PRFEINF&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFEML&#34;, description:&#34;PRFEML&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFENT&#34;, description:&#34;PRFENT&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFEXP&#34;, description:&#34;PRFEXP&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFFAC&#34;, description:&#34;PRFFAC&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFFACS&#34;, description:&#34;PRFFACS&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFFIN&#34;, description:&#34;PRFFIN&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFFPAR&#34;, description:&#34;PRFFPAR&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFFRA&#34;, description:&#34;PRFFRA&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFFRA_SUB&#34;, description:&#34;PRFFRA_SUB&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFFRAH&#34;, description:&#34;PRFFRAH&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFFRAP&#34;, description:&#34;PRFFRAP&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFFRAS&#34;, description:&#34;PRFFRAS&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFFRE&#34;, description:&#34;PRFFRE&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFFRS&#34;, description:&#34;PRFFRS&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFHAN&#34;, description:&#34;PRFHAN&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFIDF&#34;, description:&#34;PRFIDF&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFIDI&#34;, description:&#34;PRFIDI&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFIDIH&#34;, description:&#34;PRFIDIH&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFIDLH&#34;, description:&#34;PRFIDLH&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFIDS&#34;, description:&#34;PRFIDS&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFIDSH&#34;, description:&#34;PRFIDSH&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFIHI&#34;, description:&#34;PRFIHI&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFIHIH&#34;, description:&#34;PRFIHIH&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFIHL&#34;, description:&#34;PRFIHL&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFIHLH&#34;, description:&#34;PRFIHLH&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFILC&#34;, description:&#34;PRFILC&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFINF&#34;, description:&#34;PRFINF&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFINH&#34;, description:&#34;PRFINH&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFINS&#34;, description:&#34;PRFINS&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFINSH&#34;, description:&#34;PRFINSH&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFINSP&#34;, description:&#34;PRFINSP&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFIPH&#34;, description:&#34;PRFIPH&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFIPHH&#34;, description:&#34;PRFIPHH&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFLOC&#34;, description:&#34;PRFLOC&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFLOG&#34;, description:&#34;PRFLOG&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFMUT&#34;, description:&#34;PRFMUT&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFNCON&#34;, description:&#34;PRFNCON&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFNTA&#34;, description:&#34;PRFNTA&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFNUM&#34;, description:&#34;PRFNUM&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFPAR&#34;, description:&#34;PRFPAR&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFPHD&#34;, description:&#34;PRFPHD&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFPHDH&#34;, description:&#34;PRFPHDH&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFPRO&#34;, description:&#34;PRFPRO&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFPSL&#34;, description:&#34;PRFPSL&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFRUA&#34;, description:&#34;PRFRUA&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFRUAC&#34;, description:&#34;PRFRUAC&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFSIT&#34;, description:&#34;PRFSIT&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFSITH&#34;, description:&#34;PRFSITH&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFSITP&#34;, description:&#34;PRFSITP&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFSTJ&#34;, description:&#34;PRFSTJ&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFSTJH&#34;, description:&#34;PRFSTJH&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFSUJ&#34;, description:&#34;PRFSUJ&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFSUJH&#34;, description:&#34;PRFSUJH&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFSUM&#34;, description:&#34;PRFSUM&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFTAB&#34;, description:&#34;PRFTAB&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFTEL&#34;, description:&#34;PRFTEL&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFTYP&#34;, description:&#34;PRFTYP&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFVEN&#34;, description:&#34;PRFVEN&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFVENH&#34;, description:&#34;PRFVENH&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFVENT&#34;, description:&#34;PRFVENT&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFVEP&#34;, description:&#34;PRFVEP&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFVEPH&#34;, description:&#34;PRFVEPH&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;SELO_APR_RELATION&#34;, description:&#34;SELO_APR_RELATION&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;SELO_LIST&#34;, description:&#34;SELO_LIST&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;SMSLOG&#34;, description:&#34;SMSLOG&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFFRASAV&#34;, description:&#34;PRFFRASAV&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFINSL&#34;, description:&#34;PRFINSL&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFDE1L&#34;, description:&#34;PRFDE1L&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFDE1LP&#34;, description:&#34;PRFDE1LP&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFDE2L&#34;, description:&#34;PRFDE2L&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFDE3L&#34;, description:&#34;PRFDE3L&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFDE4L&#34;, description:&#34;PRFDE4L&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFSITL&#34;, description:&#34;PRFSITL&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFDULH&#34;, description:&#34;PRFDULH&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFDUVH&#34;, description:&#34;PRFDUVH&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFFRA_SUB_H&#34;, description:&#34;PRFFRA_SUB_H&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFCTP&#34;, description:&#34;PRFCTP&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFUSR&#34;, description:&#34;PRFUSR&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFUSS&#34;, description:&#34;PRFUSS&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFCET_VERIFY&#34;, description:&#34;PRFCET_VERIFY&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;PRFIDL&#34;, description:&#34;PRFIDL&#34;,type:&#34;as400&#34;});
+CREATE(a:Table {name:&#34;CHECK_ROWS&#34;, description:&#34;CHECK_ROWS&#34;,type:&#34;as400&#34;});
+</code></pre><pre tabindex="0"><code># Find tables belong to as400
+MATCH (a:Table )-[r:BelongTo]-&gt;(b:Database {name:&#39;as400&#39;}) RETURN a, b, r 
+</code></pre>
+    </div><div class="post_comments">
+  
+  
+  
+</div>
 
-    </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="分享到 LinkedIn" rel="nofollow">
-      <svg class="icon">
-  <title>linkedin</title>
-  <use xlink:href="#linkedin"></use>
-</svg>
 
-    </a>
-    <a href="https://shame-pole.pages.dev/categories/oracle/" title="Copy Link" class="link link_yank">
-      <svg class="icon">
-  <title>copy</title>
-  <use xlink:href="#copy"></use>
-</svg>
 
-    </a>
-  </div>
-  </span>
-  </div>
 
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p></p>
-          
-          <br>
-          <a href="https://shame-pole.pages.dev/categories/oracle/" title="阅读更多" class="excerpt_more button">阅读更多</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://shame-pole.pages.dev/categories/database/" title="Database">Database</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      Apr 17, 2024</span>
-    <span class="post_time"> · 0 min read</span>
-    <span class="page_only">&nbsp;·
-  <div class="post_share">
-    分享到:
-    <a href="https://twitter.com/intent/tweet?text=Database&url=https%3a%2f%2fshame-pole.pages.dev%2fcategories%2fdatabase%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>twitter</title>
-  <use xlink:href="#twitter"></use>
-</svg>
-
-    </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fshame-pole.pages.dev%2fcategories%2fdatabase%2f&t=Database" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>facebook</title>
-  <use xlink:href="#facebook"></use>
-</svg>
-
-    </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="分享到 LinkedIn" rel="nofollow">
-      <svg class="icon">
-  <title>linkedin</title>
-  <use xlink:href="#linkedin"></use>
-</svg>
-
-    </a>
-    <a href="https://shame-pole.pages.dev/categories/database/" title="Copy Link" class="link link_yank">
-      <svg class="icon">
-  <title>copy</title>
-  <use xlink:href="#copy"></use>
-</svg>
-
-    </a>
-  </div>
-  </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p></p>
-          
-          <br>
-          <a href="https://shame-pole.pages.dev/categories/database/" title="阅读更多" class="excerpt_more button">阅读更多</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://shame-pole.pages.dev/categories/network/" title="Network">Network</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      Mar 15, 2024</span>
-    <span class="post_time"> · 0 min read</span>
-    <span class="page_only">&nbsp;·
-  <div class="post_share">
-    分享到:
-    <a href="https://twitter.com/intent/tweet?text=Network&url=https%3a%2f%2fshame-pole.pages.dev%2fcategories%2fnetwork%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>twitter</title>
-  <use xlink:href="#twitter"></use>
-</svg>
-
-    </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fshame-pole.pages.dev%2fcategories%2fnetwork%2f&t=Network" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>facebook</title>
-  <use xlink:href="#facebook"></use>
-</svg>
-
-    </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="分享到 LinkedIn" rel="nofollow">
-      <svg class="icon">
-  <title>linkedin</title>
-  <use xlink:href="#linkedin"></use>
-</svg>
-
-    </a>
-    <a href="https://shame-pole.pages.dev/categories/network/" title="Copy Link" class="link link_yank">
-      <svg class="icon">
-  <title>copy</title>
-  <use xlink:href="#copy"></use>
-</svg>
-
-    </a>
-  </div>
-  </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p></p>
-          
-          <br>
-          <a href="https://shame-pole.pages.dev/categories/network/" title="阅读更多" class="excerpt_more button">阅读更多</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://shame-pole.pages.dev/categories/aliyun/" title="Aliyun">Aliyun</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      Mar 9, 2024</span>
-    <span class="post_time"> · 0 min read</span>
-    <span class="page_only">&nbsp;·
-  <div class="post_share">
-    分享到:
-    <a href="https://twitter.com/intent/tweet?text=Aliyun&url=https%3a%2f%2fshame-pole.pages.dev%2fcategories%2faliyun%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>twitter</title>
-  <use xlink:href="#twitter"></use>
-</svg>
-
-    </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fshame-pole.pages.dev%2fcategories%2faliyun%2f&t=Aliyun" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>facebook</title>
-  <use xlink:href="#facebook"></use>
-</svg>
-
-    </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="分享到 LinkedIn" rel="nofollow">
-      <svg class="icon">
-  <title>linkedin</title>
-  <use xlink:href="#linkedin"></use>
-</svg>
-
-    </a>
-    <a href="https://shame-pole.pages.dev/categories/aliyun/" title="Copy Link" class="link link_yank">
-      <svg class="icon">
-  <title>copy</title>
-  <use xlink:href="#copy"></use>
-</svg>
-
-    </a>
-  </div>
-  </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p></p>
-          
-          <br>
-          <a href="https://shame-pole.pages.dev/categories/aliyun/" title="阅读更多" class="excerpt_more button">阅读更多</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-      <li>
-      </li>
-    </ul>
-  </div>
+  </article>
 <aside class="sidebar">
   <section class="sidebar_inner">
     <br>
@@ -538,9 +470,8 @@
   </section>
 </aside>
 
+  
 </div>
-
-
     </main><svg width="0" height="0" class="hidden">
   <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
     <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>

@@ -6,7 +6,23 @@
     <description>Recent content in Technology on 知恥而後勇</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 22 May 2024 12:07:51 +0800</lastBuildDate><atom:link href="https://shame-pole.pages.dev/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 04 Jun 2024 17:44:42 +0800</lastBuildDate><atom:link href="https://shame-pole.pages.dev/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Neo4j Study</title>
+      <link>https://shame-pole.pages.dev/posts/neo4j-study/</link>
+      <pubDate>Tue, 04 Jun 2024 17:44:42 +0800</pubDate>
+      
+      <guid>https://shame-pole.pages.dev/posts/neo4j-study/</guid>
+      <description>
+        
+          
+            Installation Neo4j service is not installed D:\Tools\neo4j-community-5.5.0\bin&amp;gt;neo4j.bat start Directories in use: home: D:\Tools\neo4j-community-5.5.0 config: D:\Tools\neo4j-community-5.5.0\conf logs: D:\Tools\neo4j-community-5.5.0\logs plugins: D:\Tools\neo4j-community-5.5.0\plugins import: D:\Tools\neo4j-community-5.5.0\import data: D:\Tools\neo4j-community-5.5.0\data certificates: D:\Tools\neo4j-community-5.5.0\certificates licenses: D:\Tools\neo4j-community-5.5.0\licenses run: D:\Tools\neo4j-community-5.5.0\run Starting Neo4j. Neo4j service is not installed Unable to start. See user log for details. Run with &amp;#39;--verbose&amp;#39; for a more detailed error message. Install neo4j service neo4j.bat windows-service install Start neo4j D:\Tools\neo4j-community-5.5.0\bin&amp;gt;neo4j.bat start Directories in use: home: D:\Tools\neo4j-community-5.5.0 config: D:\Tools\neo4j-community-5.5.0\conf logs: D:\Tools\neo4j-community-5.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Postgre Init DB and Start</title>
       <link>https://shame-pole.pages.dev/posts/postgre-init-and-start/</link>
