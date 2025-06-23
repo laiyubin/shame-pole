@@ -2,22 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://shame-pole.pages.dev/categories/</loc>
+    <lastmod>2025-06-23T16:40:05+08:00</lastmod>
+  </url><url>
+    <loc>https://shame-pole.pages.dev/categories/javascript/</loc>
+    <lastmod>2025-06-23T16:40:05+08:00</lastmod>
+  </url><url>
     <loc>https://shame-pole.pages.dev/posts/</loc>
+    <lastmod>2025-06-23T16:40:05+08:00</lastmod>
+  </url><url>
+    <loc>https://shame-pole.pages.dev/tags/</loc>
+    <lastmod>2025-06-23T16:40:05+08:00</lastmod>
+  </url><url>
+    <loc>https://shame-pole.pages.dev/tags/vue/</loc>
+    <lastmod>2025-06-23T16:40:05+08:00</lastmod>
+  </url><url>
+    <loc>https://shame-pole.pages.dev/posts/vue-router-cheatsheet/</loc>
+    <lastmod>2025-06-23T16:40:05+08:00</lastmod>
+  </url><url>
+    <loc>https://shame-pole.pages.dev/tags/vue-router/</loc>
     <lastmod>2025-06-23T16:40:05+08:00</lastmod>
   </url><url>
     <loc>https://shame-pole.pages.dev/</loc>
     <lastmod>2025-06-23T16:40:05+08:00</lastmod>
   </url><url>
-    <loc>https://shame-pole.pages.dev/categories/</loc>
-    <lastmod>2024-06-04T17:44:42+08:00</lastmod>
-  </url><url>
     <loc>https://shame-pole.pages.dev/tags/neo4j/</loc>
     <lastmod>2024-06-04T17:44:42+08:00</lastmod>
   </url><url>
     <loc>https://shame-pole.pages.dev/posts/neo4j-study/</loc>
-    <lastmod>2024-06-04T17:44:42+08:00</lastmod>
-  </url><url>
-    <loc>https://shame-pole.pages.dev/tags/</loc>
     <lastmod>2024-06-04T17:44:42+08:00</lastmod>
   </url><url>
     <loc>https://shame-pole.pages.dev/categories/technology/</loc>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VUE on 知恥而後勇</title>
+    <link>https://shame-pole.pages.dev/tags/vue/</link>
+    <description>Recent content in VUE on 知恥而後勇</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 23 Jun 2025 16:40:05 +0800</lastBuildDate><atom:link href="https://shame-pole.pages.dev/tags/vue/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vue Router Cheatsheet</title>
+      <link>https://shame-pole.pages.dev/posts/vue-router-cheatsheet/</link>
+      <pubDate>Mon, 23 Jun 2025 16:40:05 +0800</pubDate>
+      
+      <guid>https://shame-pole.pages.dev/posts/vue-router-cheatsheet/</guid>
+      <description>
+        
+          
+            Insert Lead paragraph here.
+Vue Router Cheatsheet A quick reference for common Vue Router (v3/v4) tasks. For more details, refer to the Vue Router documentation (Vue 2) or Vue Router v4 docs (Vue 3).
+1. Basic Setup // Vue 2 import Vue from &amp;#39;vue&amp;#39; import VueRouter from &amp;#39;vue-router&amp;#39; import Home from &amp;#39;./views/Home.vue&amp;#39; Vue.use(VueRouter) const routes = [ { path: &amp;#39;/&amp;#39;, component: Home }, ] const router = new VueRouter({ routes // short for `routes: routes` }) new Vue({ router, render: h =&amp;gt; h(App) }).
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
